@@ -1,5 +1,9 @@
 ---
 title: markdown
+tags:
+  - 计算机
+  - 必须工具
+  - markdown
 createTime: 2025/03/31 16:04:40
 permalink: /cs/tools-must/markdown/
 icon: material-symbols:markdown

@@ -12,7 +12,7 @@ export default defineUserConfig({
       description: '',
     },
     '/en/': {
-      title: 'My Vuepress Site',
+      title: 'My Site',
       lang: 'en-US',
       description: '',
     },
@@ -30,6 +30,21 @@ export default defineUserConfig({
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
   theme: plumeTheme({
+
+    profile: {
+      name: 'oliverbroken',
+      description: '我就是个人',
+      avatar: '/plume.svg',
+      location: '深圳',
+      organization: '群众',
+      circle: true, // 是否为圆形头像
+      layout: 'right', // 个人信息在左侧还是右侧，'left' | 'right'
+    },
+    // 社交链接
+    social: [
+      { icon: 'github', link: 'https://github.com/oliver-xie666' },
+      // ... more
+    ],
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
     // hostname: 'https://your_site_url',
 
