@@ -9,6 +9,28 @@ export const zhNavbar = defineNavbarConfig([
     text: '笔记',
     items: [{ text: '示例', link: '/notes/demo/README.md' }]
   },
+  {
+    icon: '/icon/code.svg',
+    text: '计算机',
+    items: [
+        {
+            icon: 'fa6-solid:computer',
+            text: '计算机基础',
+            items: [
+                {text: '数据结构', link: '/cs/cs-basic/data-structure/'},
+                {text: '数据库系统', link: '/cs/cs-basic/database-system/'},
+                {text: '操作系统', link: '/cs/cs-basic/operating-system/'},
+            ]
+        },
+        {
+          icon: 'mdi:tools', 
+          text: '必学工具', 
+          items:[
+            {text: 'markdown', link: '/cs/tools-must/markdown/'},
+          ]
+        },
+    ]
+},
 ])
 
 export const enNavbar = defineNavbarConfig([

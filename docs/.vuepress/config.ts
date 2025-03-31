@@ -1,13 +1,13 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
-
+import notes from "./notes";
 export default defineUserConfig({
   base: '/something/',
   lang: 'zh-CN',
   locales: {
     '/': {
-      title: 'My Vuepress Site',
+      title: '我的站点',
       lang: 'zh-CN',
       description: '',
     },
@@ -66,7 +66,7 @@ export default defineUserConfig({
      * @see https://theme-plume.vuejs.press/config/basic/#cache
      */
     cache: 'filesystem',
-
+    notes,
     /**
      * 为 markdown 文件自动添加 frontmatter 配置
      * @see https://theme-plume.vuejs.press/config/basic/#autofrontmatter
